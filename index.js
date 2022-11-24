@@ -69,7 +69,7 @@ class SGNames {
     async namesOf(address) {
         let queryResponse = await this._queryNameContract(this.nameCollectionContract, {
             "tokens": {
-                "owner": address
+                "owner": toBech32('stars', fromBech32(address).data)
             }
         })
         if (!queryResponse.data) {

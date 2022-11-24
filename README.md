@@ -40,9 +40,11 @@ Possible networks:
 ### Fetch Name Info
 
 ```js
-SGNames.fetchNameInfo("my-awesome-name")
+await SGNames.fetchNameInfo("my-awesome-name")
 ```
-Returns object type of such structure:
+
+Returns object of such structure:
+
 ```js
 {
     name:"my-awesome-name.stars",
@@ -64,4 +66,33 @@ Returns object type of such structure:
         ...
     }
 }
+```
+
+### Fetch name associated with address
+
+One address can have many names, however only one name can be associated with one address, making bidirectional linking and possibility for reverse lookups.
+Here's example how to fetch associated name of specified address:
+```js
+await SGNames.fetchNameOfAddress("stars1...")
+```
+Returns same object as fetch name info.
+
+### Fetch owner of name
+
+```js
+await SGNames.ownerOf("my-awesome-name")
+```
+Returns Stargaze address of owner of name, even if name is not associated with it.
+
+### Names of address
+
+Fetch all names of specified address.
+
+```js
+await SGNames.namesOf("stars1...")
+```
+
+Returns array of all names of address.
+```js
+["my-awesome-name","more-awesome-name","themostawesomename","helloworld", ...]
 ```
