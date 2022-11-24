@@ -1,0 +1,15 @@
+{
+  "name": "sgnames.js",
+  "version": "0.0.2",
+  "description": "JS SDK for Stargaze names",
+  "main": "index.js",
+  "repository": "https://github.com/public-awesome/sgnames.js",
+  "author": "Nikita Rykov <nik@hns.is>",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "@cosmjs/encoding": "^0.29.4",
+    "buffer": "^6.0.3",
+    "isomorphic-fetch": "^3.0.0"
+  }
+}
