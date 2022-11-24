@@ -1,6 +1,6 @@
 {
   "name": "sgnames.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JS SDK for Stargaze names",
   "main": "index.js",
   "repository": "https://github.com/public-awesome/sgnames.js",
