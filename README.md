@@ -35,7 +35,9 @@ Possible networks:
   Names Collection Contract: `stars1rp5ttjvd5g0vlpltrkyvq62tcrdz949gjtpah000ynh4n2laz52qarz2z8`
 - Stargaze mainnet
   
-  *Not live yet, stay tuned*
+  LCD Endpoint: `https://rest.stargaze-apis.com`
+
+  Names Collection Contract: `stars1fx74nkqkw2748av8j7ew7r3xt9cgjqduwn8m0ur5lhe49uhlsasszc5fhr`
 
 ### Fetch Name Info
 

@@ -3,8 +3,8 @@ const Buffer = require("buffer").Buffer
 const { toBech32, fromBech32 } = require("@cosmjs/encoding")
 class SGNames {
     networks = ['stars', 'akash', 'osmo', 'cosmos', 'stride', 'juno', 'secret', 'cro', 'persistence', 'agoric', 'axelar', 'umee', 'gravity']
-    lcdEndpoint = 'https://rest.elgafar-1.stargaze-apis.com';
-    nameCollectionContract = 'stars1rp5ttjvd5g0vlpltrkyvq62tcrdz949gjtpah000ynh4n2laz52qarz2z8';
+    lcdEndpoint = 'https://rest.stargaze-apis.com';
+    nameCollectionContract = 'stars1fx74nkqkw2748av8j7ew7r3xt9cgjqduwn8m0ur5lhe49uhlsasszc5fhr';
     constructor() {
 
     }
