@@ -35,7 +35,7 @@ class SGNames {
         return {
             name: name + ".stars",
             owner: queryResponse.data.access.owner,
-            addresses: Object.fromEntries(this.networks.map(network => [network, toBech32(network, fromBech32(queryResponse.data.info.token_uri).data)])),
+            addresses: queryResponse?.data?.info?.token_uri ? Object.fromEntries(this.networks.map(network => [network, toBech32(network, fromBech32(queryResponse.data.info.token_uri).data)])) : [],
             stargazeAddress: queryResponse.data.info.token_uri,
             imageNFT: queryResponse.data.info.extension.image_nft,
             records: queryResponse.data.info.extension.records.reduce((pv, cv) => {
